@@ -12,9 +12,23 @@ Version: 0.01
 Author URI: http://e271.net/~marina
 */
 
+/*******************************************************************
+*       If you want this to be voluntary change $voluntary to "yes *
+* precisely lower case yes, else viewers will automaticall be      *
+* flashproxies                                                     *
+********************************************************************/
+
+$voluntary = "yes";
+// $voluntary = "no";
+
+/**** DO NOT EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU ARE DOING ! ****/
+
 // This just echoes the chosen line, we'll position it later
 function print_flashproxy() {
-	echo '<iframe src="//crypto.stanford.edu/flashproxy/embed.html?cookierequired" width="80" height="15" frameborder="0" scrolling="no"></iframe>';
+	if ($voluntary == "yes")
+		echo '<iframe src="//crypto.stanford.edu/flashproxy/embed.html?cookierequired" width="80" height="15" frameborder="0" scrolling="no"></iframe>';
+	else
+		echo '<iframe src="//crypto.stanford.edu/flashproxy/embed.html" width="80" height="15" frameborder="0" scrolling="no"></iframe>';
 }
 
 // Add print_flashproxy() to wp_footer
