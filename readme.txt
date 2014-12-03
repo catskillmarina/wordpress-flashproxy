@@ -19,6 +19,8 @@ on the internet:
 
 http[s]://crypto.stanford.edu/flashproxy/embed.html
 
+This code enables the users browser to act as a proxy for TOR network users.
+
 AND if the viewer agrees, it sends data to the TOR network. The website for the
 TOR project is https://torproject.org .
 
