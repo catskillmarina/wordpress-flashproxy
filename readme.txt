@@ -14,7 +14,15 @@ This plugin converts viewers of a wordpress blog into TOR proxies or bridges.
 == Description ==
 
 The Tor Project flashproxy as a wordpress plugin. This plugin links to the 
-offsite hosted flashproxy code. If the viewer of the site so desires they can
+offsite hosted flashproxy code. The plugin sends data to the following places
+on the internet:
+
+http[s]://crypto.stanford.edu/flashproxy/embed.html
+
+AND if the viewer agrees, it sends data to the TOR network. The website for the
+TOR project is https://torproject.org .
+
+If the viewer of the site so desires they can
 donate bandwith from their own browser to the tor network. WARNING: this 
 plugin has a link with javascript.
 
